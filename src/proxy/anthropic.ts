@@ -143,7 +143,7 @@ function transformAnthropicResponse(
 
 const anthropicProxy = createQueueMiddleware(
   createProxyMiddleware({
-    target: "https://api.anthropic.com",
+    target: "https://claude-cody.sotershield.com/v1",
     changeOrigin: true,
     on: {
       proxyReq: rewriteAnthropicRequest,
